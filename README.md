@@ -4,24 +4,24 @@
 
 io.exporter
 
-简介
-导出数据工具包
+简介<br/> 
+导出数据工具包<br/> 
 
-集成
-将jar文件导入classpath即可
+集成<br/> 
+将jar文件导入classpath即可<br/> 
 
-接口
- interface: exporter.io.core.ExporterExcelFactory
- Boolean export(String xlsxFile,String sheetName,List<Map<String, Object>> dataResult);
- void newExcelSheet(Workbook workBook, String sheetName, List<Map<String, Object>> dataResult);
- Boolean exportExcel(String xlsxFile, Workbook workBook);
+接口<br/> 
+ interface: exporter.io.core.ExporterExcelFactory<br/> 
+ Boolean export(String xlsxFile,String sheetName,List<Map<String, Object>> dataResult);<br/> 
+ void newExcelSheet(Workbook workBook, String sheetName, List<Map<String, Object>> dataResult);<br/> 
+ Boolean exportExcel(String xlsxFile, Workbook workBook);<br/> 
 
-interface: exporter.io.core.ExporterCSVFactory
-Boolean export(String csvFile,List<Map<String, Object>> dataResult);
+interface: exporter.io.core.ExporterCSVFactory<br/> 
+Boolean export(String csvFile,List<Map<String, Object>> dataResult);<br/> 
 
-class: exporter.io.core.factory.Excel2007Exporter
-class: exporter.io.core.factory.Excel2003Exporter
-class: exporter.io.core.factory.CsvExporter
+class: exporter.io.core.factory.Excel2007Exporter<br/> 
+class: exporter.io.core.factory.Excel2003Exporter<br/> 
+class: exporter.io.core.factory.CsvExporter<br/> 
 
-方法
-详见doc文档
+方法<br/> 
+详见doc文档<br/> 
